@@ -242,12 +242,18 @@ header .idioma img {
 }
 
 .agencia .staff .avatar {
+  padding: 4px;
   width: 120px;
   height: 120px;
-  border: 1px solid #000;
+  border: 1px solid #aaa;
   border-radius: 50%;
-  background-image: url("../img/persona.jpg");
-  background-size: contain;
+  overflow: hidden;
+}
+
+.agencia .staff .avatar img {
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
 }
 
 .agencia .staff .descripcion p {
