@@ -50,6 +50,7 @@ header nav .burguer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 9;
 }
 
 header nav .burguer .linea1,
@@ -88,22 +89,25 @@ header input {
   height: 55px;
   top: 0;
   opacity: 0;
-  z-index: 2;
+  z-index: 10;
 }
 
 header input:checked ~ .burguer .linea1 {
   -webkit-transform: translateY(9px) rotate(45deg);
           transform: translateY(9px) rotate(45deg);
+  background-color: #000;
 }
 
 header input:checked ~ .burguer .linea2 {
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
+  background-color: #000;
 }
 
 header input:checked ~ .burguer .linea3 {
   -webkit-transform: translateY(-10px) rotate(-45deg);
           transform: translateY(-10px) rotate(-45deg);
+  background-color: #000;
 }
 
 header input:checked ~ .menu {
@@ -117,11 +121,11 @@ header .menu {
   transition: all 200ms linear;
   width: 100%;
   position: absolute;
-  top: 55px;
+  padding: 3rem 0;
+  top: 0;
   left: -100%;
   right: 0;
   background-color: #fff;
-  padding-bottom: 1rem;
 }
 
 header .menu a {
