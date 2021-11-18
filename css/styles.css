@@ -271,6 +271,10 @@ header .idioma img {
           flex-direction: row-reverse;
 }
 
+.titulo {
+  font-size: 1.5rem;
+}
+
 .servicios {
   background: #fff;
 }
@@ -282,20 +286,22 @@ header .idioma img {
   margin: 2rem 0;
 }
 
-.servicios .imagen {
-  background-image: url("../img/fondo__servicios.png");
-  max-width: 268px;
-  height: 180px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.servicios article {
+  position: relative;
 }
 
-.servicios .imagen img {
-  opacity: 0.1;
+.servicios article img {
+  width: 100%;
+  max-width: 420px;
+}
+
+.servicios article h5 {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.servicios article p {
+  margin-bottom: 2rem;
 }
 
 footer {
